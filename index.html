@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="./main.css">
+    </head>
+    <body>
+        <main id="container">
+            <canvas id="canvas"></canvas>
+            <canvas id="canvas2"></canvas>
+            <section id="input">
+                <div class="inputSingleSection boxColInput">
+                    <label for="redInput">Red</label>
+                    <input type="range" min="0" max="255" step="1" value="0" name="redInput" value="" class="colInput">
+                    <label for="greenInput">Green</label>
+                    <input type="range" min="0" max="255" step="1" value="0" name="greenInput" value="" class="colInput">
+                    <label for="blueInput">Blue</label>
+                    <input type="range" min="0" max="255" step="1" value="0" name="blueInput" value="" class="colInput">
+                </div>
+                <div id=colShow></div>
+                <div class="inputSingleSection" id="scaleFactorInput">
+                    <label for="scaling">Scaling Factor</label>
+                    <input id="scaleInput" type="number" min="8" max="300" name="scaling" value="10" size="3">
+                </div>
+                <div class="">
+                    <button type="button" name="button" id="clearScreen">Clear Screen</button>
+                </div>
+            </section>
+        </main>
+    </body>
+    <script src="./index.js" charset="utf-8"></script>
+    <script type="text/javascript">
+        init();
+    </script>
+</html>

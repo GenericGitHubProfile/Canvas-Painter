@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+main#container {
+    width: 100vw;
+    height: 100vh;
+}
+
+canvas {
+    width: 100%;
+    height: 80%;
+    cursor: crosshair;
+    z-index: 0;
+}
+
+section#input {
+    height: calc(20% - 2px);
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+section#input > div.inputSingleSection {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    border-right: 1px solid black;
+}
+
+section#input > div.inputSingleSection > input {
+    margin-bottom: 20px;
+}
+
+div#colShow {
+    height: 200px;
+    width: 200px;
+    background-color: #000000;
+}
+
+div#scaleFactorInput {
+    justify-content: center;
+}
+div#scaleFactorInput > input {
+    font-size: 2em;
+    width: 150px;
+    text-align: center;
+}
